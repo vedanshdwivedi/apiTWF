@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Vedansh API</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <h1 class="display-4">Hello, Client!</h1>
+            <p class="lead">This is the least cost of commuting in the best way to fulfill the given order. Enter the number of each of the stocks required in fields given below</p>
+            <hr class="my-4">
+            <p><h2>
+                Cost : {{ output }}
+            </h2></p>
+        </div>
+        <form method="post">
+            <div class="row">
+                <div class="col-sm">
+                    City 1
+                </div>
+                <div class="col-sm">
+                    City 2
+                </div>
+                <div class="col-sm">
+                    City 3
+                </div>
+            </div>
+
+            <!--For A D G stocks-->
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="a">A</label>
+                        <input type="text" name="a" class="form-control" id="a" aria-describedby="aHelp" value="0">
+                        <small id="aHelp" class="form-text text-muted">Enter number of stock A</small>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="d">D</label>
+                        <input type="text" name="d" class="form-control" id="d" aria-describedby="dHelp" value="0">
+                        <small id="dHelp" class="form-text text-muted">Enter number of stock D</small>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="g">G</label>
+                        <input type="text" name="g" class="form-control" id="g" aria-describedby="gHelp" value="0">
+                        <small id="gHelp" class="form-text text-muted">Enter number of stock G</small>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--For B E H stocks-->
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="b">B</label>
+                        <input type="text" name="b" class="form-control" id="b" aria-describedby="bHelp" value="0">
+                        <small id="bHelp" class="form-text text-muted">Enter number of stock B</small>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="e">E</label>
+                        <input type="text" name="e" class="form-control" id="e" aria-describedby="eHelp" value="0">
+                        <small id="eHelp" class="form-text text-muted">Enter number of stock E</small>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="h">H</label>
+                        <input type="text" name="h" class="form-control" id="h" aria-describedby="hHelp" value="0">
+                        <small id="hHelp" class="form-text text-muted">Enter number of stock H</small>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--For C F I stocks-->
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="c">C</label>
+                        <input type="text" name="c" class="form-control" id="c" aria-describedby="cHelp" value="0">
+                        <small id="cHelp" class="form-text text-muted">Enter number of stock C</small>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="f">F</label>
+                        <input type="text" name="f" class="form-control" id="f" aria-describedby="fHelp" value="0">
+                        <small id="fHelp" class="form-text text-muted">Enter number of stock F</small>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="i">I</label>
+                        <input type="text" name="i" class="form-control" id="i" aria-describedby="iHelp" value="0">
+                        <small id="iHelp" class="form-text text-muted">Enter number of stock I</small>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" name="submit" class="btn btn-primary">Calculate</button>
+        </form>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
